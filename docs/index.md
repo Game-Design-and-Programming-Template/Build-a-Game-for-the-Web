@@ -3,33 +3,98 @@
 Today we are going to build a game and publish it on your GitHub Pages website. Here are the steps involved:
 
 1. **Using Git Bash, _clone_ the GitHub repository holding your GitHub Pages website to your computer.** This gives you a local copy on your computer that you can add the game to.
-1. **Configure Unity to build a WebGL version of one of the example games.**
-1. **Build the game.** We will have Unity save the game in the folder holding your website.
-1. **Push the modified website back to GitHub.** This will also update the published version of the website.
-1. **Add a link to the game in your website's README.md file.**
-1. **Submit a link to your website.**
-
-<!--
-
-To complete this assignment you will:
-
-
-* On GitHub, make a fork of the PlaygroundProjectStarter repository so that you have your own copy of the code.
-* Return to Git Bash and _clone_ the PlaygroundProjectStarter repository to your computer.
-* 
-* 
-* Add it to your GitHub Pages website.
-* Push your game to GitHub to publish it on your website.
-
-[pps]: <https://github.com/Game-Design-and-Programming-Template/PlaygroundProjectStarter>
-[dlu]: <https://douglasurner.github.io>
+2. **Configure Unity to build a WebGL version of one of the example games.**
+3. **Build the game.** We will have Unity save the game in the folder holding your website.
+4. **Push the modified website back to GitHub.** This will also update the published version of the website.
+5. **Add a link to the game in your website's README.md file.**
+6. **Submit a link to your website.**
 
 ## Before starting
 
 Make sure that you have:
 
-* Created your GitHub account, and
+* Created your GitHub account.
 * Have **verified your e-mail address**. You will not be able to complete this assignment until you have a verified e-mail address.
+* Set up and tested your GitHub Pages website.
+* Cloned your fork of the PlaygroundProjectStarter repository.
+
+## The Details:
+
+### 1: Cloning your GitHub Pages website
+
+1. On your computer, use Windows Explorer to navigate to your Game Design class folder.
+2. Right-click in the "white space" in Explorer and choose _Git Bash Here_.
+3. In the Git Bash shell type:
+
+   ```bash
+   git clone https://github.com/YOUR_USER_NAME/YOUR_USER_NAME.github.io.git
+   ```
+   
+   When entering the command replace YOUR_USER_NAME with your GitHub username. Type `Enter` to execute the command.
+
+### 2: Configuring Unity to build a game for the web
+
+1. Launch Unity and open the PlaygroundProjectStarter project.
+1. Select **Build Settings...** (File > Build Settings...) in the Unity File menu.
+1. Click on the **Add Open Scenes** button in the Build Settings dialog.
+1. Choose WebGL (the orange icon with a 5 in the design) in the **Platform** section .
+
+### 3: Build the game
+
+1. Click the **Build & Run** button in the bottom right corner.
+1. In the resulting dialog, **navigate** to folder holding your website.
+1. Click on the `New Folder` button to create a folder for your game. Name the folder after your game.
+1. Click Build and Run
+1. Wait, and wait.
+
+### 4: Push your website changes to GitHub
+
+When the build completes:
+
+1. Add your game to Git:
+
+```bash
+git add NAME_OF_THE_GAME_FOLDER
+```
+2. Commit your changes:
+
+```bash
+git commit -m "Add first game."
+```
+
+3. Push your change to GitHub:
+
+```bash
+git push
+```
+
+### 5: Add a link to your game
+
+If all has gone well your game is now on your GitHub Pages site, but it is not easily accessible. To get to it you need to know, and enter manually, the path to the game's _index.html_ file. Let's make that simpler by adding a link.
+
+1. Go to your GitHub profile and go into the repository for your GitHub Pages site (`<your username>.github.io`).
+1. Select the _README.md_ file and click on the edit (pencil) button.
+1. Add the following Markdown code to link to your game:
+
+   ```markdown
+   ## Games
+   * [GAME_NAME](NAME_OF_GAME_FOLDER/index.html)
+   ```
+   If I used the Lander game, and wanted to call it Lander, and had put it in a folder called _Lander_ the Markdown code would look like this:
+   
+   ```markdown
+   ## Games
+   * [Lander](Lander/index.html)
+   ```
+
+### 6: Submit the URL of your GitHub Pages website
+
+1. On Canvas, paste the URL of your GitHub Pages website into the submission box.
+
+
+<!--
+
+
 
 ## Working on the command line
 
@@ -192,22 +257,7 @@ After making the clone:
 
 ### 5: Linking to your game
 
-If all has gone well your game is now on your GitHub Pages site, but it is not easily accessible. To get to it you need to know, and enter manually, the path to the game's _index.html_ file. Let's make that simpler by adding a link.
 
-1. Go to your GitHub profile and go into the repository for your GitHub Pages site (`<your username>.github.io`).
-1. Select the _README.md_ file and click on the edit (pencil) button.
-1. Add the following Markdown code to link to your game:
-
-   ```markdown
-   ## Games
-   * [<game name>](https://<your username>.github.io/<folder holding your game>/index.html)
-   ```
-   If I used the Lander game, and wanted to call it Lander, and had put it in a folder called _Test_ my Markdown code would look like this:
-   
-   ```markdown
-   ## Games
-   * [Lander](https://douglasurner.github.io/Test/index.html)
-   ```
 
 1. After making the changes fill in the Commit changes dialog and click on the green Commit changes button, then test.
 
