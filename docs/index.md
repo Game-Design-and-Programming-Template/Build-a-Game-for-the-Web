@@ -1,12 +1,23 @@
 ## Overview
 
+Today we are going to build a game and publish it on your GitHub Pages website. Here are the steps involved:
+
+1. **Using Git Bash, _clone_ the GitHub repository holding your GitHub Pages website to your computer.** This gives you a local copy on your computer that you can add the game to.
+1. **Configure Unity to build a WebGL version of one of the example games.**
+1. **Build the game.** We will have Unity save the game in the folder holding your website.
+1. **Push the modified website back to GitHub.** This will also update the published version of the website.
+1. **Add a link to the game in your website's README.md file.**
+1. **Submit a link to your website.**
+
+<!--
+
 To complete this assignment you will:
 
-* Using Git Bash, _clone_ the repository for your GitHub Pages wedsite to your computer.
+
 * On GitHub, make a fork of the PlaygroundProjectStarter repository so that you have your own copy of the code.
 * Return to Git Bash and _clone_ the PlaygroundProjectStarter repository to your computer.
-* Configure Unity to build a WebGL version of one of the example games.
-* Build the game.
+* 
+* 
 * Add it to your GitHub Pages website.
 * Push your game to GitHub to publish it on your website.
 
@@ -203,3 +214,5 @@ If all has gone well your game is now on your GitHub Pages site, but it is not e
 ### **6: Complete the assignment by submitting a link to your published game**
 
 After posting and testing the game you selected, submit **link to your GitHub Pages site.**
+
+-->
